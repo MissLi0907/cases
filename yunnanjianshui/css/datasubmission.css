@@ -1,0 +1,145 @@
+.datasub{
+    min-height: 640px;
+    background: #fff;
+    padding: 2%;
+}
+.list{
+	width: 36%;
+}
+.list ul{
+	min-height: calc(640px - 3rem);
+	border: 1px #262626 solid;
+}
+.list ul li{
+	padding-left:10px;
+	padding-right: 80px;
+	height: 42px;
+	line-height: 42px;
+}
+.list ul li a{
+	font-size: 15px;
+	color: #666;
+}
+.list ul li a:hover{
+	color: #0090F0;
+	transform: translateX(12px);
+}
+.list ul li:hover i::before{
+	width: 14px;
+	background: #0090F0;
+}
+.list ul li:hover i::after{
+	border-color: #0090F0;
+}
+.list i::before{
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 2px;
+	background: #D5D5D5;
+	top: 50%;
+	right: 18px;
+	transition: all 0.35s linear;
+}
+.list i::after{
+	position: absolute;
+	content: "";
+	height: 7px;
+	width: 7px;
+	display: block;
+	border:2px solid #D5D5D5;
+	border-left-width:0;
+	border-top-width:0;
+	transform:rotate(-45deg) translateY(-50%);
+	-webkit-transform:rotate(-45deg) translateY(-50%);
+	-moz-transform:rotate(-45deg) translateY(-50%);
+	-ms-transform:rotate(-45deg) translateY(-50%);
+	top:50%;
+	right:15px;
+	transition: all 0.35s linear;
+}
+.submission{
+	width: 54%;
+	padding-left: 10%;
+}
+.selectunit{
+	width: 100%; 
+	height: 40px; 
+	position: relative;
+	border: 1px solid #aaa;
+}
+.selectunit select{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	line-height: 40px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding-left: 10px;
+}
+.selectunit::after{
+	position: absolute; 
+	content: "";
+	right: 10px; 
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none; 
+	width:0;
+	height:0;
+	border-right:8px solid transparent;
+	border-left:8px solid transparent;
+	border-top:8px solid #262626;
+}
+.submission .required {
+    padding: 0 10px;
+    font-size: 0.7rem;
+    color: #262626;
+    border: 1px solid #aaa;
+    width: calc(100% - 20px);
+    height: 40px;
+    line-height: 40px;
+}
+.submission .textarea{
+	height: 180px;
+	line-height: 2;
+	padding: 10px;
+}
+.submission ul li span{
+	margin: 0.9rem 0;
+}
+.submission .file{
+	width: calc(100% - 20px);
+	height: 40px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #aaa;
+	padding: 0 10px;
+	overflow: hidden;
+	color: #262626;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 40px;
+	font-size: 0.7rem;
+}
+.submission .file input{
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.file-process{
+    margin-top: 4%;
+    margin-bottom: 7%;
+    width: 20%;
+    background: #0090F0;
+    color: #fff;
+    font-size: 0.8rem;
+    height: 2.1rem;
+}
+.file-process:hover{background: #0079c9;}
+.empty{background: #fbbd1e;}
+.empty:hover{background: #d19d19;}
+/*.delete{background: #DB3235;}
+.delete:hover{background: #b82a2d;}*/

@@ -1,0 +1,13 @@
+.property{padding: 15px 0 114px;}
+.property ul{flex-wrap: wrap;margin-right: -1.5rem;} 
+.property ul li{margin-top: 1rem; margin-right: 1.5rem; padding: 0 30px 30px; width: 50%; border: 1px solid #e6e6e6;}
+.property ul li .imgbox{margin: 2rem auto 2rem; width: 420px; height: auto;}
+.property ul li .imgbox img{position: relative;left: 50%;transform: translateX(-50%);}
+.property ul li p{font-size: 14px; color: #666; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.property ul li i{position: absolute; display: block; background: #0090F0;}
+.property ul li .border-top{left: 0; top: 0; width: 0; height: 4px;}
+.property ul li .border-right{right: 0; top: 0; width: 4px; height: 0;}
+.property ul li .border-bottom{right: 0; bottom: 0; width: 0; height: 4px;}
+.property ul li .border-left{left: 0; bottom: 0; width: 4px; height: 0;}
+.property ul li:hover .border-top,.property ul li:hover .border-bottom{width: 100%;}
+.property ul li:hover .border-right,.property ul li:hover .border-left{height: 100%;}
