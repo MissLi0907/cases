@@ -1,0 +1,313 @@
+body {
+	background: url(../img/login-bg.jpg) center no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.we-sign-in-box,.we-register,.we-forget {
+	width: 6rem;
+	padding: 30px 20px 20px;
+	margin: 3.2rem auto 3rem;
+	background: rgba(0, 0, 0, 0.72);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.we-register{
+	margin: 2rem auto 1.4rem;
+}
+.we-sign-in-box h1,.we-register h1,.we-forget h1 {
+	color: #fff;
+	font-size:0.3rem;
+	text-align: center;
+	height: 60px;
+	margin-top: 0;	
+}
+.we-sign-in-user,.we-sign-in-user-password,.we-sign-in-user-password-register {	
+	width: 48%;
+	display: block;
+	padding: 8px 0px;
+	margin-left: 10%;
+	margin-bottom: 20px;
+	font-size: 13px;
+	padding-left: 0.12rem;
+}
+.we-sign-in-user:focus,.we-sign-in-user-password:focus,.we-sign-in-user-password-register:focus,.we-input-img:focus,.we-sign-messages:focus,.we-input-img-forget-left:focus,.we-sign-in-phone:focus {
+	border: #c8a05a 1px solid;
+	box-shadow: 2px 2px 10px rgba(200, 160, 90, 0.4), inset 0px 0px 6px rgba(200, 160, 90, 0.4);
+}
+.btnadpt,.btnadpt-register,.btnadpt-forget{
+	width:80%;
+	display: block;
+	padding: 10px 0px;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1em;
+	margin: 0 auto 10px;
+	cursor: pointer; 
+	background-color: #b89353;
+}
+.btnadpt-forget{
+	margin-bottom:20px;
+}
+.btnadpt:hover,.btnadpt-register:hover,.btnadpt-forget:hover,.we-input-img-forget:hover{
+	background: #c8a05a;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+.n_links_area {
+	height: 44px;
+}
+.n_links_area a {
+	color: #999;
+	font-size: 14px;
+	line-height: 48px;
+}
+.n_links_area a:hover {
+	color: #c8a05a;
+}
+.n_links_area-right {
+	float: right;
+}
+.n_links_area-left {
+	float: left;
+}
+.inputbg-inputcode-dis-box {
+	width: 100%;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.we-input-img {
+	width: 22%;
+	padding: 8px 0px;
+	display: inline-block;
+	font-size: 13px;
+	padding-left: 0.12rem;
+	margin-left:10%;
+}
+.chkcode_img {
+	cursor: pointer;
+	height: 34px;
+	display: inline-block;
+}
+.we-sign-messages {
+	width: 48%;
+	margin-left: 10%;
+	padding: 8px 0px;
+	padding-left: 0.12rem;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+.we-forget h3 {
+	text-align: center;
+	color: #eee;
+	font-size: 13px;
+}
+.we-input-img-forget {
+	width: 32%;
+	background: #b89353;
+	cursor: pointer;
+	padding: 8px 0px;
+	display: block;
+	color: #fff;
+	font-size: 13px;
+	float: left;
+	margin-left: 14px;
+}
+
+.we-input-img-forget-left {
+	width: 32%;
+    margin-left: 10%;
+	padding: 8px 0px;
+	display: block;
+	font-size: 13px;
+	padding-left: 0.12rem;
+	float: left;
+}
+
+.we-sign-in-phone {
+	width: 52.8%;
+	padding: 8px 0px;
+	padding-left: 0.12rem;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 10%;
+}
+
+.we-input-phone {
+	width: 12%;
+	height: 22px;
+	line-height: 22px;
+	padding: 13px 0px;
+	padding-left: 0.12rem;
+	display: block;
+	font-size: 13px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.we-check {
+	width: 20px;
+	height: 20px;
+	font-size: 13px;
+	float: left;
+	margin-left: 10%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-appearance: none;
+	appearance: none;
+	position: relative;
+	outline:none !important;
+}
+input[type="checkbox"]:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C8A05A;
+    border-radius: 2px;
+}
+input[type="checkbox"]:checked:before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 14px;
+	height: 8px;
+	border: 2px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+input[type="checkbox"]:checked:after {
+	background: #C8A05A;
+    border: 2px solid #C8A05A;
+    border-radius: 2px;
+}
+.n_links_area-wecheck h3 {
+	margin-left: 28px;
+	color: #fff;
+	font-size: 13px;
+	padding-top: 8px;
+}
+
+.n_links_area-wecheck h3>a {
+	color: #c8a05a;
+	text-decoration: underline;
+}
+
+.we-register h4,.we-sign-in-box h4,.we-forget h4 {
+	float: right;
+	margin-top: -24px;
+	color: red;
+	font-size: 13px;
+}
+
+.register-fail {
+	position: absolute;
+	z-index:1002;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	border: solid 2px #c8a05a;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+	padding: 20px;
+	width: 3.6rem;
+	height: 100px;
+	color: #c8a05a;
+}
+
+.register-fail span {
+	font-size: 13px;
+	color: #333;
+}
+.register-fail a {
+	float: right;
+	color: #007EAD;
+	margin-top: 28px;
+	font-size: 13px;
+}
+.prompt{
+	font-size: 13px;
+    text-align: left!important;
+    color: red!important;
+    height: 0px!important;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: -20px;
+}
+.we-sign-in-box h5,.we-register h5{
+	font-size: 13px;
+    color: #999;
+    display: inline-block;
+    margin-left: 0.1rem;
+}
+
+.we-sign-in-box h5:hover,.we-register h5:hover{
+	color:#c8a05a;
+}
+.we-disable{
+	width:100%;
+	height:100%;
+	opacity: 0.5;
+	position:absolute;
+	z-index: 1001;
+	background:#fff;
+	top:0;
+}
+@media (max-width :1366px) {
+	.we-sign-in-box,.we-forget{margin-top:2.6rem;}
+	.we-register{margin-top:1.5rem;}
+}
+.service-terms {
+	position: absolute;
+	padding-top: 20px;
+	background: rgba(255, 255, 255, 1);
+	color: #666;
+	overflow-y: scroll;
+	height: 78vh;	
+	width: 80%;
+	font-size: 14px;
+	z-index: 999;
+	top: 15%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.service-terms p{
+	padding: 10px 30px;
+	line-height: 1.8;
+}
+.service-terms span {
+	font-size: 14px;
+	color: #C8A05A;
+	width: 100%;
+	padding-left:30px;
+}
+.service-terms h3 {
+	font-size: 0.24rem;
+	text-align: center;
+	color: #262626;
+}
+.we-close-right {
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-top: -42px;
+	margin-right: 24px;
+	background: url(../img/serviceterms_close.png) no-repeat 0 -16px;
+	cursor: pointer;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+.we-close-right:hover {
+	background-position: 0 0;
+}
