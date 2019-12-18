@@ -104,7 +104,7 @@ ul{margin: 0;padding: 0}
 header{position: fixed;top: 0;left: 0;right: 0;background: #0090F0 ;z-index: 100}
 header .box{display: flex;align-items: center;justify-content: space-between;height: 1.1rem;padding-left: 2vw;padding-right: 3vw;}
 header .home{width: .48rem;height: .48rem;border-radius: 50%;background: #0685D9;position: relative;margin-left: .15rem}
-header .home img{position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;}
+header .home img{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%); margin: auto;width: 50%;}
 header .nav a{display: inline-block;font-size: .16rem;color: #fff;line-height: 1.1rem;width: 8.6vw;text-align: center;position: relative;transition: all .3s linear}
 header .nav {padding-left: 0;margin-bottom: 0;list-style: none;}
 header .nav{font-size: 0;}
