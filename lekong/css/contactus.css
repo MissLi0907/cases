@@ -1,0 +1,45 @@
+.content-bg{
+	padding: 0.4rem;
+	overflow: auto;
+}
+.contact-map{
+	width: 100%;
+	height: 60%;
+	border: 1px solid #ACABA9;
+}
+.contact-map #container{
+    width: 100%;
+    height: 100%;
+}
+.contact-text{
+	margin-top: 0.3rem;
+	display: flex;
+	text-align: center;
+}
+.contact-details{
+	width: 75%;
+	margin-top: 0.3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-wechat{
+	margin-left: 0.8rem;
+	width: calc(25% - 0.8rem);
+}
+.contact-details img{
+	max-width: 100%;
+}
+.contact-details h3{
+	font-size: 0.2rem;
+	margin-top: 0.16rem;
+}
+.contact-details p{
+	font-size: 0.16rem;
+	margin-top: 0.16rem;
+}
+.contact-wechat img{
+	max-width: 100%;
+}
+.contact-wechat p{
+	margin-top: 0.16rem;
+}

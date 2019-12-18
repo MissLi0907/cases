@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<title>东方园林生态环境研究总院</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="hidden">
+			<!-- header begin -->
+			<div class="trans-3 header">
+				<div class="container">
+					<div class="navbar navbar-default mb noradius noborder">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="trans-3 icon-bar"></span>
+								<span class="trans-3 icon-bar"></span>
+								<span class="trans-3 icon-bar"></span>
+							</button>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse mb">
+							<ul class="nav navbar-nav">
+								<li>
+									<a class="trans-3" href="index.html">首页</a>
+								</li>
+								<li>
+									<a class="trans-3" href="about.html">总院简介</a>
+								</li>
+								<li>
+									<a class="trans-3" href="news.html">新闻中心</a>
+								</li>
+								<li>
+									<a class="trans-3" href="research-trends.html">研究动态</a>
+								</li>
+								<li>
+									<a class="trans-3" href="tech-innovation.html">科技创新</a>
+								</li>
+								<li>
+									<a class="trans-3" href="expert.html">专家人才</a>
+								</li>
+								<li>
+									<a class="trans-3" href="">基地建设</a>
+								</li>
+								<li>
+									<a class="trans-3" href="">对外合作</a>
+								</li>
+								<li>
+									<a class="trans-3" href="">信息咨询</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="pa logo-ol" href=""></a>
+				<a class="pa logo-enri" href="index.html"></a>
+				<div class="pa search-member">
+					<input class="pa search-border" />
+					<img class="pa search-icon" src="img/search_icon.png" />
+					<a id="user-href" class="trans-3" href="login.html"><i class="iconfont" id="user-iconfont" title="登录">&#xe600;</i></a>
+				</div>
+			</div>
+			<div class="mask"></div>
+			<!-- header end -->
+			
+			<!--用户登录begin-->
+			<div class="we-sign-in-box" id="we-sign-in-box">
+				<h1>用户登录</h1>
+				<h4>*表示出错</h4>
+				<input class="we-sign-in-user " type="text " placeholder="邮箱/手机号码 " id="sign-in-mail-phone">
+				<span class="prompt" id="sign-in-prompt" hidden="hidden">*</span>
+				<input class="we-sign-in-user-password" type="password" id="we-password" placeholder="密码 ">
+				<span class="prompt" id="we-sign-in-prompt-password" hidden="hidden">*</span>
+				<div class="inputbg-inputcode-dis-box">
+					<input class="we-input-img " id="we-input-imgone" type="text" placeholder="图片验证码 ">					
+					<img id="chkcode_img" class="chkcode_img" alt="图片验证码" src="img/captcha.png">
+					<a href="javascript:void(0);" onclick='chgImg("#chkcode_img");'><h5 class="trans-3">看不清?换一张</h5></a>
+				</div>
+				<span class="prompt" id="we-input-imgone-prompt" hidden="hidden">*</span>
+				<input class="btnadpt" id="login-button" type="submit" value="登录">
+				<div class="n_links_area">
+					<a href="javascript:void(0);" class="n_links_area-left trans-3" id="n_links_area-left">立即注册</a>
+					<a href="javascript:void(0);" class="n_links_area-right trans-3" id="we-forget-password">忘记密码</a>
+				</div>
+			</div>
+			<!--用户登录end-->
+			
+			<!--用户注册begin-->
+			<div class="we-register" id="we-register" hidden="hidden">
+				<img id="we-registerback" class="pa" src="img/icon_back.png" title="返回"><!--返回-->
+				<h1>用户注册</h1>
+				<h4>*表示出错</h4>
+				<input class="we-sign-messages " type="text "id="nameone" style="width:30%" placeholder="姓名 ">
+				<span class="prompt" hidden="hidden" id="nameone-prompt">*</span>
+				<input class="we-sign-messages " type="text " id="we-phoneone" style="width:36%" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="手机号码">
+				<span class="prompt" id="we-phoneone-prompt"hidden="hidden">*</span>
+				<input class="we-sign-messages " type="text " id="company"placeholder="单位">
+				<span class="prompt" hidden="hidden" id="company-prompt">*</span>
+				<input class="we-sign-messages " type="text " id="mail" placeholder="请输入注册邮箱">
+				<span class="prompt" hidden="hidden" id="mail-prompt">*</span>
+				<input class="we-sign-in-user-password-register" type="password" id="password-one" placeholder="密码 ">
+				<span class="prompt" hidden="hidden" id="password-one-prompt">*</span>
+				<input class="we-sign-in-user-password-register" type="password" id="password-agin" placeholder="请重新输入密码 ">
+				<span class="prompt" hidden="hidden" id="password-agin-prompt">*</span>
+				<div class="inputbg-inputcode-dis-box">
+					<input class="we-input-img" id="we-input-imgtwo" type="text" placeholder="图片验证码 ">
+					<img id="register_img" class="chkcode_img" alt="图片验证码" src="img/captcha.png" >
+					<a href="javascript:void(0);" onclick='chgImg("#register_img");'><h5 class="trans-3">看不清?换一张</h5></a>
+				</div>
+				<span class="prompt" id="we-imgtwo-prompt"  hidden="hidden"> *</span>
+				<input class="btnadpt-register" id="register" type="submit" value="注册">
+
+				<div class="n_links_area-wecheck">
+					<input class="we-check" type="checkbox" checked="false">
+					<h3>我已阅读并同意<a href="#" id="data-service-terms">国储林大数据服务条款</a></h3>
+				</div>
+			</div>
+			
+			<div class="register-fail" id="register-fail" hidden="hidden">
+				<span>抱歉：</span><br/>注册失败!
+				<a href="#" id="we-agin-register">请重新注册</a>
+			</div>
+			<!--用户注册end-->
+			
+			<!--忘记密码 begin-->
+			<div class="we-forget" id="we-forget" hidden="hidden">
+				<img id="we-forgetback" class="pa" src="img/icon_back.png" title="返回">
+				<h1>重置密码</h1>
+				<h4>*表示出错</h4>			
+				<input class="we-sign-in-phone" id="mail-two" type="text " placeholder="邮箱号 ">
+				<span class="prompt" id="mail-two-prompt" hidden="hidden">*</span>
+				<div class="inputbg-inputcode-dis-box">
+					<input class="we-input-img-forget-left " id="mail-verifica" type="text " placeholder="邮箱验证码 ">
+					<button class="we-input-img-forget" id="we-input-img-forget" onclick="getTime()">获取邮箱验证码</button>
+				</div>
+				<span class="prompt" id="mail-verifica-prompt" hidden="hidden">*</span>
+				<input class="we-sign-in-user-password" type="password" id="we-password-two" placeholder="请设置新的密码 ">
+				<span class="prompt" id="we-password-two-prompt" hidden="hidden">*</span>
+				<input class="we-sign-in-user-password" type="password" id="we-password-agin" placeholder="请重新输入密码 ">
+				<span class="prompt"  id="we-password-agin-prompt" hidden="hidden">*</span>
+				<input class="btnadpt-forget" id="login-button-agin" type="submit" value="确定">				
+			</div>
+			<!--忘记密码end-->
+			
+			<!--服务条款begin-->
+			<div class="service-terms" id="service-terms" hidden="hidden">
+				<h3>国储林大数据服务条款</h3>
+				<span>免责声明</span>
+				<div class="we-close-right" id="close" title="关闭"></div>
+				<p>如您进入、访问或使用本网站及其任何网页信息，即表明您已同意接受以下条款与条件的约束。您理解并确认，下列条款与条件可能会根据法律规定及/或本网站需要不时做出变更或调整。如您不同意下列条款与条件，请勿进入、访问或使用本网站或其任何信息。
+				<br />
+				“本网站”指由东方园林股份有限公司、东方园林生态环境研究总院（以下简称“本公司”）注册并负责运营的网站及其网站内所发布的所有信息及材料。
+				<br />
+				1. 本网站所载信息和资料的来源皆由本公司审核，且本公司尽力严谨处理本网站所载信息和资料，但本公司的审核仅限于信息与资料的表面审核，并不构成本公司对其准确性、充分性、完整性及其使用的适当性等的任何保证；本公司及其股东、员工不对本网站内第三者所提供资料的任何错误或遗漏承担任何法律责任，应自行承担依据本网站资料与信息所作决策的所有风险。
+				<br />
+				2. 您理解并确认，本网站所登载信息与资料具有时效性，您在阅读资料或信息的时间与资料或信息有可能因所基于的资料或信息发布日之后的情势或其他因素的变更而不再准确或失效。本网站不对您由于本网站所登载信息与资料的时效性所作决策承担任何法律责任。
+				<br />
+				3. 您理解并确认，本网站为向用户提供便利而设置的外部链接网页（如有）的内容并非由本公司实际控制，本公司会对该外部链接功能进行定期检查，但本公司不能保证其所载入信息的真实性、准确性、充分性、完整性和时效性，同时，亦不应视为本公司同意、推荐、认可、保证或推介任何第三方或其网站所提供的服务/产品，您须自行识别、判断该等网站信息的可靠性。
+				<br />
+				4. 您理解并确认，本网站介绍的信息和资料并非旨在提供任何形式的建议。这些信息和资料仅供一般性参考。
+				<br />
+				5. 您理解并确认，未经本公司书面许可，您或您所代表的机构不得转载和发布本网站内的任何信息。
+				<br />
+				6. 本公司就本网站各项服务的安全、无误及不中断不承担任何明示或默示的保证责任。您同意自行承担使用本网站服务的所有风险及因该等风险可能造成的任何损害。对于因技术故障（如传输错误、技术缺陷、第三者侵入等）而导致的任何数据缺失等，本公司不承担任何责任。
+				<br />
+				7. 本网站的内容将不定期更新或调整。本公司对网站所载或所涉及的信息和资料的及时性、准确性、完整性不作任何担保或保证。本公司保留无需事先通知即可删除或修改网站信息的权利。
+				<br />
+				8. 除非存在故意不当或欺诈行为，本公司及其股东、员工对于因您进入、访问或使用本网站，或无法进入、访问或使用本网站而可能对您导致的任何直接或间接损失，不承担任何责任。
+				<br />
+				9. 本公司应当具有法律法规规定的其它有关免责规定项下所有权利，本公司没有主张或迟延主张该等权利并不应当被视为本公司对于该等权利的放弃。对于法律法规规定的免责权利的放弃，本公司将一概采取书面方式；本公司对一项权利做出书面放弃，并不视为本公司对其他权利的放弃。
+				<br />
+				10. 进入、访问与使用本网站，以及本条款受中华人民共和国法律管辖，并依照中华人民共和国法律解释。
+				<br />
+				11. 如因本网站产生的任何争议，将以本公司所在地法院为管辖法院，除非中国法律另有强制性规定。
+				<br />
+				12. 本公司对该协议享有最终的解释权。
+				<br />
+				<br />
+				<span style="text-align: right;display: inline-block;">东方园林股份有限公司 东方园林生态环境研究总院</span></p>
+			</div>
+
+		<!--服务条款end-->
+		</div>		 
+		<div class="we-disable" id="we-disable" hidden="hidden"></div>
+		
+			<!--footer begin-->
+			<div class="hidden footer">
+				<div style="border-bottom:1px solid #333;width: 100%;height: 1px; margin:15px 0 0; "></div>
+				<div class="container">
+					<!--<a class="logo-enri-bottom" href="index.html"></a>-->
+					<div class="clearfix footer-nav">
+						
+						<div class="col-xs-12 col1">
+							<dl>
+								<dt>关于我们</dt>
+								<dd>
+									<!--<a class="trans-3" href="">公司简介</a>-->
+									<a class="trans-3" href="">&#9776; 专家力量</a>
+									<a class="trans-3" href="">&#9777; 团队合作</a>
+									<a class="trans-3" href="">&#9778; 对外合作</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="col-xs-12 col2">
+							<dl>
+								<dt>我们的服务</dt>
+								<dd>
+									<a href="" class="trans-3" >&#9779; 新闻中心</a>
+									<a href="" class="trans-3" >&#9780; 研究动态</a>
+									<a href="" class="trans-3" >&#9781; 工作动态</a>
+									<a href="" class="trans-3" >&#9782; 科技创新</a>
+									<a href="" class="trans-3" >&#9783; 基地建设</a>
+								</dd>
+							</dl>						
+						</div>
+						<div class="col-xs-12 col3">
+							<dl>
+								<dt>联系方式</dt>
+								<dd>
+									<span title="">联系地址：北京市朝阳区酒仙桥北路甲10号院IT产业园电子城104号东方园林</span>
+									<span>客服电话：86- 075-855 91153</span>
+									<span>商务邮箱：orientlandscape@163.com</span>
+								</dd>
+							</dl>						
+						</div>
+						<div class="col-xs-12 col4">
+							<dl>
+								<dt>关注我们</dt>
+								<dd>
+									<div class="inline clearfix">
+										<div class="wechat-code"><img class="" src="img/wechat_code.png" /><span>官方微信</span></div>
+										<div class="weibo-code"><img class="" src="img/weibo_code.png" /><span>官方微博</span></div>
+									</div>
+								</dd>
+							</dl>						
+						</div>
+					</div>
+					<div class="clearfix text-center copyright">
+						<div class="col-xs-12 col-sm-12 col-md-4 noborder">东方园林股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;版权所有<a href="" target="_blank" class="trans-3">&nbsp;&nbsp;&nbsp;&nbsp;服务条款与协议</a></div>
+						<div class="col-xs-12 col-sm-12 col-md-8 noborder">© 2017 东方园林投资控股集团&nbsp;&nbsp;&nbsp;&nbsp;京ICP备13020911号</div>
+					</div>
+				</div>
+
+			</div>
+			<!--footer end-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

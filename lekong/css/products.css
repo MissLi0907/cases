@@ -1,0 +1,107 @@
+.content-bg{
+	padding: 0.2rem;
+	position: relative;
+}
+.product-list{
+	clear: both;
+	height:calc(100% - 56px);
+}
+.product-list ul{
+	height: 100%;
+	padding-top: 10px;
+}
+.product-item{
+	width: 33.33%;
+	height: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+.product-item a{
+	display: block;
+	text-align: center;
+	height: 100%;
+}
+.product-item a img{
+	max-width: 80%;
+	height: auto;
+	margin: 0.15rem auto;
+	max-height:60%;
+}
+@media (max-width: 1440px){
+	.product-item a img{
+		max-height: 56%;
+	}
+}
+.product-item a p{
+	font-size: 0.2rem;
+}
+.product-item a:hover p{
+	color: #078484;
+}
+.lkpage{
+	display: block;
+	text-align: center;
+	position: absolute;
+	bottom: 0.2rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.lkpage a{
+	display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+	width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 -1px 5px 10px;
+    color: #333;
+    font-size: 12px;
+}
+.lkpage a:hover{
+	color: #078484;
+	border: 1px solid #078484;
+}
+.lkpage a.lkpage-curr{
+	background: #078484;
+	color: #FFFFFF;
+}
+.lkpage a.lkpage-prev,
+.lkpage a.lkpage-next{
+	border: 1px solid #999999;
+	border-radius: 0.01rem;
+	position: relative;
+}
+
+.lkpage a.lkpage-prev::after,
+.lkpage a.lkpage-next::after{
+	content: "";
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-top: 1px solid #999999;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.05rem;	
+}
+.lkpage a.lkpage-prev::after{
+	border-left: 1px solid #999999;
+    margin-left: -0.02rem;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.lkpage a.lkpage-next::after{
+	border-right: 1px solid #999999;
+    margin-left: -0.08rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.lkpage a.lkpage-prev:hover,.lkpage a.lkpage-prev:hover::after,
+.lkpage a.lkpage-next:hover,.lkpage a.lkpage-next:hover::after{
+	border-color: #078484;
+}

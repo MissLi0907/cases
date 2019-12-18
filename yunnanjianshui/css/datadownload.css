@@ -1,0 +1,74 @@
+.download{
+    padding-bottom: 3rem;
+}
+.download ul li{
+    position: relative;
+    margin-top: 20px;
+    padding: 14px 22px;
+    background: #fff;
+    font-size: 0.9rem;
+}
+.download ul li p{padding-right: 180px;}
+.download ul li:first-child{
+    margin-top: 3rem;
+}
+.download ul li .download-now{
+    position: absolute;
+    right: 22px;
+    top: 36px;
+    font-size: 0.7rem;
+    color: #666;
+}
+.download ul li:hover p{
+	color: #0090F0;
+	transform: translateX(12px);
+}
+.download-now{
+    padding-right: 22px;
+    background: url(../img/download.png) no-repeat right center;
+}
+.download ul li:hover .download-now{
+	-webkit-transform: translateY(-6px);
+	transform: translateY(-6px);
+	-webkit-animation-name: anim-subnav;
+	animation-name: anim-subnav;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate
+}
+@-webkit-keyframes anim-subnav { 
+0% {
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+50%{
+	-webkit-transform:translateY(0px);        
+	transform:translateY(0px);
+}
+100%
+{
+	-webkit-transform:translateY(3px);
+	transform:translateY(3px);
+}
+}
+@keyframes anim-subnav {
+0% {
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+50%{
+	-webkit-transform:translateY(0px);
+	transform:translateY(0px);
+}
+100%{
+	-webkit-transform:translateY(3px);
+	transform:translateY(3px);
+}
+}

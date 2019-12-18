@@ -1,0 +1,213 @@
+@charset "UTF-8";
+.research{
+	margin-bottom:0.6rem;
+}
+.title{
+	transform:translateY(-0.4rem);
+	border-bottom:1px solid #dbdbdb;
+}
+.innerpages-title .cn {
+    font-size: 0.24rem;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    line-height:2.2;
+}
+.innerpages-title .cn:hover {
+    color:#c8a05a;
+}
+.active .cn{
+	color:#c8a05a;
+}
+ .innerpages-title .cn::after{
+	position:absolute;
+	content:'';
+	width:0;
+	height:4px;
+	background:#c8a05a;
+	bottom:0;
+	left:50%;
+	transform:translate(-50%,10px);
+	transition:all 0.8s ease;
+}
+ .active .cn::after,.cn:hover::after{
+ 	width:40%;
+ }
+.innerpages-title:nth-child(1){
+	-webkit-animation-delay: 0.125s;
+            animation-delay: 0.125s;
+}
+.innerpages-title:nth-child(2){
+	-webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+}
+.innerpages-title:nth-child(3){
+	-webkit-animation-delay: 0.375s;
+            animation-delay: 0.32=75s;
+}
+.innerpages-title:nth-child(4){
+	-webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+.research-list{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+.research-item{
+	width:calc((100% - 0.8rem)/3);
+	height:320px;
+	margin:0.3rem 0.3rem 0.3rem 0;   
+	overflow: hidden;
+	box-sizing:border-box;
+	border:2px solid #fff;
+	cursor:-moz-zoom-in;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+	transition:all 0.3s ease;
+}
+.research-item img{
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	transition:all 0.8s ease;
+}
+.research-item:nth-child(3n+0){
+	margin-right:0;
+}
+.research-item:hover{
+	border-color:#c8a05a;
+	border-width:4px;
+}
+.research-item img:hover{
+	transform:translate(-50%,-50%) scale(1.08);
+}
+.bigPic{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	top:0;
+	left:0;
+	z-index:9999;
+	cursor:pointer;
+}
+.bigPic p,.bigPic h6{
+	font-size:16px;
+	color:#fff;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+}
+.bigPic p{
+	bottom:10vh;
+}
+.bigPic h6{
+	font-size:13px;
+	top:0.8rem;
+}
+.bigPic p span{
+	font-size:12px;
+	color:#c8a05a;
+	padding:3px 4px 2px;
+	margin:0 6px;
+	border:1px solid #c8a05a;
+}
+.bigPic .btn{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.btn i{
+	height:72px; 
+	width:72px; 
+	display:block; 
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+.btn .left{
+	left:0.3rem;
+}
+.btn .right{
+	right:0.4rem;
+}
+.btn .left::before,.btn .right::before{
+	content:''; 
+	height:40px; 
+	width:40px; 
+	display:block; 
+	border:4px solid #fff; 
+	transform:rotate(-43deg);
+	-webkit-transform:rotate(-43deg);
+	position:absolute; 
+	top:7px; 
+	right:7px;
+	border-radius:4px;
+	transition:all 0.3s ease;
+}
+.btn .left::before{	
+	border-right-width:0; 
+	border-bottom-width:0; 
+}
+.btn .right::before{
+	border-left-width:0; 
+	border-top-width:0; 	
+}
+.btn .left:hover::before,.btn .right:hover::before{
+	border-color:#c8a05a;
+}
+.btn i:hover{
+	-webkit-transform: translate(-6px,-50%);
+	transform: translate(-6px,-50%);
+	-webkit-animation-name: anim-subnav;
+	animation-name: anim-subnav;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate
+}
+@-webkit-keyframes anim-subnav { 
+0% {
+	-webkit-transform: translate(-3px,-50%);
+	transform: translate(-3px,-50%);
+}
+50%{
+	-webkit-transform:translate(0px,-50%);        
+	transform:translate(0px,-50%);
+}
+100%
+{
+	-webkit-transform:translate(3px,-50%);
+	transform:translate(3px,-50%);
+}
+}
+@keyframes anim-subnav {
+0% {
+	-webkit-transform: translate(-3px,-50%);
+	transform: translate(-3px,-50%);
+}
+50%{
+	-webkit-transform:translate(0px,-50%);
+	transform:translate(0px,-50%);
+}
+100%{
+	-webkit-transform:translate(3px,-50%);
+	transform:translate(3px,-50%);
+}
+}
+.bigPic img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	max-width:84%;
+	max-height:64vh;
+	transform:translate(-50%,-50%);
+}
+.show{}
+.hide{
+	display:none;
+}

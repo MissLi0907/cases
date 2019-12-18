@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<title>东方园林生态环境研究总院</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/personal-information.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="hidden">
+			<!-- header begin -->
+			<div class="trans-3 header">
+				<div class="container">
+					<div class="navbar navbar-default mb noradius noborder">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="trans-3 icon-bar"></span>
+								<span class="trans-3 icon-bar"></span>
+								<span class="trans-3 icon-bar"></span>
+							</button>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse mb">
+							<ul class="nav navbar-nav">
+								<li>
+									<a class="trans-3" href="index.html">首页</a>
+								</li>
+								<li>
+									<a class="trans-3" href="about.html">总院简介</a>
+								</li>
+								<li>
+									<a class="trans-3" href="news.html">新闻中心</a>
+								</li>
+								<li>
+									<a class="trans-3" href="research-trends.html">研究动态</a>
+								</li>
+								<li>
+									<a class="trans-3" href="tech-innovation.html">科技创新</a>
+								</li>
+								<li>
+									<a class="trans-3" href="expert.html">专家人才</a>
+								</li>
+								<li>
+									<a class="trans-3" href="">基地建设</a>
+								</li>
+								<li>
+									<a class="trans-3" href="">对外合作</a>
+								</li>
+								<li>
+									<a class="trans-3" href="">信息咨询</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="pa logo-ol" href=""></a>
+				<a class="pa logo-enri" href="index.html"></a>
+				<div class="pa search-member">
+					<input class="pa search-border" />
+					<img class="pa search-icon" src="img/search_icon.png" />
+					<a id="user-href" class="trans-3" href="login.html"><i class="iconfont" id="user-iconfont" title="登录">&#xe600;</i></a>
+				</div>
+			</div>
+			<div class="mask"></div>
+			<!-- header end -->
+			
+			<!--个人信息 begin-->
+			<div class="personal-info-box">
+				<div class="we-left">
+					<div class="head-portrait"></div>
+				</div>
+				<div class="we-right">
+					<div class="datum-title-box-one">
+						<div class="datum-title-box">基本信息</div>
+						<table class="datum-table" cellspacing="0">
+							<tbody>
+								<tr>
+									<th>姓名</th>
+									<td>
+										<div id="realname" class="always">李彬</div>
+									</td>
+								</tr>
+								<tr>
+									<th>手机号</th>
+									<td>
+										<div id="mobile" class="always">18669783356</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="padding-top-30">邮箱</th>
+									<td id="email" class="padding-top-30">
+										<div class="always">test@orientscape.com</div>
+									</td>
+								</tr>
+								<tr>
+									<th>单位</th>
+									<td><span id="company" class="selected">东方园林</span></td>
+								</tr>
+								<tr>
+									<th>密码</th>
+									<td><span class="selected">*********</span> <a href="#" class="modify" id="modify">修改</a></td>
+								</tr>
+			
+							</tbody>
+						</table>
+					</div>
+					<div class="datum-title-box-two">
+						<div class="datum-title-box">登录信息</div>
+						<table class="datum-table" cellspacing="0">
+							<tbody>
+								<tr>
+									<th>上次登录时间</th>
+									<td><span class="selected">2018.10.9</span></td>
+								</tr>
+								<tr>
+									<th>一共登录次数</th>
+									<td><span class="selected">70次</span></td>
+								</tr>
+								<tr>
+									<th>登录IP</th>
+									<td><span class="selected">0.0.0.0</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="we-modify" id="we-modify" hidden="hidden">
+					<!--<img class="we-closeone" id="we-closeone" src="img/serviceterms_close.png">-->
+					<div class="we-closeone" id="we-closeone" title="关闭"></div>
+					<h1>修改密码</h1>
+					<h4>*表示出错</h4>
+					<input class="we-sign-in-user-password" type="password"id="we-password" placeholder="请输入原始密码 ">
+					<span class="prompt" id="we-password-prompt" hidden="hidden"> *</span>
+					<input class="we-sign-in-user-password" type="password" id="we-password-agin" placeholder="请输入新密码 ">
+					<span class="prompt" id="we-password-agin-prompt" hidden="hidden"> *</span>
+					<input class="we-sign-in-user-password" type="password" id="we-agintwo" placeholder="请再次输入新密码 ">
+					<span class="prompt" id="we-agintwo-prompt" hidden="hidden">*</span>
+					<input class="btnadpt" id="modify-password" type="submit" value="确认修改">
+				</div>
+				<div class="register-success" id="register-success" style="display: none;">
+					<span id="mod-passwd">修改成功!</span>
+					<!--<img class="we-close" id="we-close" src="img/serviceterms_close.png">-->
+					<div class="we-close" id="we-close" title="关闭"></div>
+				</div>					
+			</div>
+			<div class="we-disable" hidden="hidden" id="we-disable"></div>
+			<!--个人信息end-->
+			
+			<!--footer begin-->
+			<div class="hidden footer">
+				<div style="border-bottom:1px solid #333;width: 100%;height: 1px; margin:15px 0 0; "></div>
+				<div class="container">
+					<!--<a class="logo-enri-bottom" href="index.html"></a>-->
+					<div class="clearfix footer-nav">
+						
+						<div class="col-xs-12 col1">
+							<dl>
+								<dt>关于我们</dt>
+								<dd>
+									<!--<a class="trans-3" href="">公司简介</a>-->
+									<a class="trans-3" href="">&#9776; 专家力量</a>
+									<a class="trans-3" href="">&#9777; 团队合作</a>
+									<a class="trans-3" href="">&#9778; 对外合作</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="col-xs-12 col2">
+							<dl>
+								<dt>我们的服务</dt>
+								<dd>
+									<a href="" class="trans-3" >&#9779; 新闻中心</a>
+									<a href="" class="trans-3" >&#9780; 研究动态</a>
+									<a href="" class="trans-3" >&#9781; 工作动态</a>
+									<a href="" class="trans-3" >&#9782; 科技创新</a>
+									<a href="" class="trans-3" >&#9783; 基地建设</a>
+								</dd>
+							</dl>						
+						</div>
+						<div class="col-xs-12 col3">
+							<dl>
+								<dt>联系方式</dt>
+								<dd>
+									<span title="">联系地址：北京市朝阳区酒仙桥北路甲10号院IT产业园电子城104号东方园林</span>
+									<span>客服电话：86- 075-855 91153</span>
+									<span>商务邮箱：orientlandscape@163.com</span>
+								</dd>
+							</dl>						
+						</div>
+						<div class="col-xs-12 col4">
+							<dl>
+								<dt>关注我们</dt>
+								<dd>
+									<div class="inline clearfix">
+										<div class="wechat-code"><img class="" src="img/wechat_code.png" /><span>官方微信</span></div>
+										<div class="weibo-code"><img class="" src="img/weibo_code.png" /><span>官方微博</span></div>
+									</div>
+								</dd>
+							</dl>						
+						</div>
+					</div>
+					<div class="clearfix text-center copyright">
+						<div class="col-xs-12 col-sm-12 col-md-4 noborder">东方园林股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;版权所有<a href="" target="_blank" class="trans-3">&nbsp;&nbsp;&nbsp;&nbsp;服务条款与协议</a></div>
+						<div class="col-xs-12 col-sm-12 col-md-8 noborder">© 2017 东方园林投资控股集团&nbsp;&nbsp;&nbsp;&nbsp;京ICP备13020911号</div>
+					</div>
+				</div>
+		
+			</div>
+			<!--footer end-->
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/personal-information.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

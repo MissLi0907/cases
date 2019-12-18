@@ -1,0 +1,58 @@
+.achievement{
+	margin: 0 auto 2.4rem;
+}
+.row{
+    margin-left: -14px;
+    margin-right: -14px;
+}
+.achievement ul li{
+    float: left;
+    margin-top: 28px;
+    padding: 0 14px;
+    width: 50%;
+    box-sizing: border-box;
+}
+.achievement ul li .article{
+    position: relative;
+    padding: 20px 30px;
+    background: #fff;
+}
+.achievement ul li .article h5{
+    margin-bottom: 8px;
+    line-height: 22px;
+    font-size: 0.9rem;
+    color: #383838;
+    height: 22px;
+    width: 75%;
+    margin-top: 10px;
+}
+.achievement ul li .article p{
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 20px;
+    height: 20px;
+    width: 75%;
+}
+.achievement ul li .article a{
+    position: absolute;
+    right: 30px;
+    top: 50%;transform: translateY(-50%);
+    padding: 5px 28px;
+    border: 1px solid #ddd;
+}
+.achievement ul li .article a em{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 0;
+    height: 100%;
+    background: #333;
+}
+.achievement ul li .article a span{
+    position: relative;
+    z-index: 1;
+}
+.achievement ul li:hover img{transform: scale(1.08); -webkit-transform: scale(1.08);}
+.achievement ul li .article a:hover{color: #fff;}
+.achievement ul li .article a:hover em{width: 100%;}
