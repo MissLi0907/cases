@@ -39,8 +39,9 @@ $(document).ready(function(){
 		$(".about-content .about-content1").addClass("hide");
 		$(".about-content .about-content2").removeClass("hide");
 	})
+	
 	$(".pagination ul li").click(function(){
 		$(".pagination ul li").removeClass("on");
-		$(this).addClass("on")
+		$(this).addClass("on");
 	})
 });

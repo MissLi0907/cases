@@ -289,20 +289,20 @@ header .nav-icon.on span:nth-of-type(2){width: 0}
 	border-radius: 8px;
 	padding: .3rem;
 }
-.team .item .pic img{
+.team .item .pic img,.team-details .details-content .pic img{
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
 }
-.team .item .brief-intro{
+.team .item .brief-intro,.team-details .details-content .intro{
 	margin-top: .2rem;
 }
-.team .item .brief-intro .name,.committee .item p .name{
+.team .item .brief-intro .name,.committee .item p .name,.team-details .details-content .intro .name{
 	color: #0090F0;
 	font-size: .32rem;
 	font-weight: 600;
 }
-.team .item .brief-intro p{
+.team .item .brief-intro p,.team-details .details-content .intro .subject{
 	margin-top: .1rem;
 	color: #8c8c8c;
 }
@@ -348,13 +348,13 @@ header .nav-icon.on span:nth-of-type(2){width: 0}
 	margin-bottom: .2rem;
 	margin-right: .1rem;
 }
-.pagination ul li a{
+.pagination ul li{
 	color: #0090F0;
 }
 .pagination ul li.on{
 	background: #0090F0;
 }
-.pagination ul li.on a{
+.pagination ul li.on{
 	color: #fff;
 }
 
@@ -401,14 +401,14 @@ header .nav-icon.on span:nth-of-type(2){width: 0}
 	font-weight: 600;
 }
 
-.article{
-	margin-top: .6rem;
-	margin-bottom: .6rem;
+.article,.team-details{
+	margin-top: .4rem;
+	margin-bottom: .4rem;
 }
 .article .title h3{
 	font-size: .34rem;
 }
-.article p{
+.article p,.team-details p{
 	line-height: 1.8;
 	margin-bottom: .2rem;
 	letter-spacing: .01rem;
