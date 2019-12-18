@@ -103,8 +103,8 @@ ul{margin: 0;padding: 0}
 
 header{position: fixed;top: 0;left: 0;right: 0;background: #0090F0 ;z-index: 100}
 header .box{display: flex;align-items: center;justify-content: space-between;height: 1.1rem;padding-left: 2vw;padding-right: 3vw;}
-header .login{width: .48rem;height: .48rem;border-radius: 50%;background: #0685D9;position: relative;margin-left: .15rem}
-header .login img{position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;}
+header .home{width: .48rem;height: .48rem;border-radius: 50%;background: #0685D9;position: relative;margin-left: .15rem}
+header .home img{position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;}
 header .nav a{display: inline-block;font-size: .16rem;color: #fff;line-height: 1.1rem;width: 8.6vw;text-align: center;position: relative;transition: all .3s linear}
 header .nav {padding-left: 0;margin-bottom: 0;list-style: none;}
 header .nav{font-size: 0;}
@@ -136,7 +136,7 @@ header .nav-icon.on span:nth-of-type(2){width: 0}
 	header .nav{display: none;position: absolute;top: 1.1rem;left: 0;right: 0;text-align: left;background: #0090F0; border-top: 1px solid rgba(255,255,255,.2);z-index:20}
 	header .nav a{width: 100%;font-size: 14px;line-height: 45px;}
 	header .nav a:hover{background: #0685D9;}
-	header .login{width: .6rem;height: .6rem}
+	header .home{width: .6rem;height: .6rem}
 }
 @media (max-width: 737px){
 	footer{padding-bottom: .3rem}
