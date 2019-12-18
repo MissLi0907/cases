@@ -384,9 +384,6 @@ header .nav-icon.on span:nth-of-type(2){width: 0}
 	.personnel .pagination ul li{
 		width: calc(50% - .2rem);
 	}
-	.banner p {
-	    font-size: .26rem;
-	}
 }
 .project .item h5,.personnel .item h5{
 	font-size: .28rem;
